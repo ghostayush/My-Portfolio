@@ -44,9 +44,8 @@
         <h3>Hi, my name is</h3>
         <p>Ayush Singh Bhadauria</p>
         <h4>AND I'm <span class="multiple-text"></span></h4>
-    </div>
-
-    <div class="social-icons">
+    
+        <div class="social-icons">
       <a href="https://linkedin.com/in/ayushsb" target="_blank"
         ><i class="fa-brands fa-linkedin"></i
       ></a>
@@ -59,6 +58,11 @@
       <a href="mailto:ayushsb4451@gmail.com"
         ><i class="fa-regular fa-envelope" target="_blank"></i
       ></a>
+    </div>
+      </div>
+    
+    <div class="model">
+      <model-viewer id="paused-change-demo" camera-controls touch-action="pan-y" autoplay animation-name="Running" ar ar-modes="webxr scene-viewer" scale="0.2 0.2 0.2" shadow-intensity="1" src="scene.gltf" alt="An animated 3D model of a robot"></model-viewer>
     </div>
 
 </div>
@@ -352,5 +356,8 @@
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 <script type="text/javascript" src="index.js"></script>
+<script type="module"
+		  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+</script>
 </body>
 </html>
