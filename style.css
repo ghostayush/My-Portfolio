@@ -17,9 +17,9 @@ body{
     background-size: cover;
     background-position: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 li{
     list-style: none;
@@ -123,6 +123,14 @@ header{
     color: rgb(11, 132, 235);
     text-shadow: rgb(11, 132, 235) 1px 0 5px;
 }
+.model{
+    height: 100%;
+    width: 40%;
+}
+.model model-viewer{
+    height: 100%;
+    width: 100%;
+}
 .snow{
     position: absolute;
     width: 100%;
@@ -131,7 +139,9 @@ header{
     animation: animate;
     -webkit-animation: animate 20s linear infinite;
 }
-
+#default-ar-button{
+    display: none;
+}
 @keyframes animate{
     0%{
         background-position: 0 0,0 0,0 0;
@@ -837,6 +847,15 @@ footer {
     }
 }
 @media(max-width:650px){
+    .home{
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 0.5rem;
+    }
+    .model{
+        height: 40%;
+        width: 40%;
+    }
     .container{
         flex-direction: column;
     }
